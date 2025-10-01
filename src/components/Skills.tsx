@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Code2, Smartphone, Palette, Box } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Skills = () => {
+  const { t } = useLanguage();
   const skills = [
     {
       category: "Frontend Development",
@@ -34,11 +36,11 @@ const Skills = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
-            Skills & Expertise
+            {t('skillsTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+            {t('skillsSubtitle')}
           </p>
         </div>
         

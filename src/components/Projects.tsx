@@ -1,11 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 
 const Projects = () => {
+  const { t } = useLanguage();
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -38,11 +40,11 @@ const Projects = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
-            Featured Projects
+            {t('projectsTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            A selection of my recent work showcasing web and mobile development
+            {t('projectsSubtitle')}
           </p>
         </div>
         
@@ -90,7 +92,7 @@ const Projects = () => {
                   >
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
+                      {t('viewLive')}
                     </a>
                   </Button>
                   

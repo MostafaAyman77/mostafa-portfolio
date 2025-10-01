@@ -1,7 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Briefcase, GraduationCap } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Experience = () => {
+  const { t } = useLanguage();
   const experiences = [
     {
       type: "work",
@@ -89,7 +91,7 @@ const Experience = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
-            Experience & Education
+            {t('experienceTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>

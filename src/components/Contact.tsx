@@ -5,9 +5,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,7 +41,7 @@ const Contact = () => {
     }
 
     toast({
-      title: "Message Sent!",
+      title: t('messageSent'),
       description: "Thank you for reaching out. I'll get back to you soon!",
     });
     
@@ -75,28 +77,28 @@ const Contact = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
-            Get In Touch
+            {t('contactTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
           <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? Feel free to reach out!
+            {t('contactSubtitle')}
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <Card className="p-8 border-none gradient-card animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <h3 className="text-2xl font-bold mb-6 text-foreground">Send a Message</h3>
+            <h3 className="text-2xl font-bold mb-6 text-foreground">{t('sendMessage')}</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
-                  Your Name
+                  {t('yourName')}
                 </label>
                 <Input
                   id="name"
                   type="text"
-                  placeholder="John Doe"
+                  placeholder={t('yourName')}
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full"
@@ -105,12 +107,12 @@ const Contact = () => {
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
-                  Your Email
+                  {t('yourEmail')}
                 </label>
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john@example.com"
+                  placeholder={t('yourEmail')}
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full"
@@ -119,11 +121,11 @@ const Contact = () => {
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
-                  Message
+                  {t('yourMessage')}
                 </label>
                 <Textarea
                   id="message"
-                  placeholder="Tell me about your project..."
+                  placeholder={t('yourMessage')}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full min-h-[150px]"
@@ -136,7 +138,7 @@ const Contact = () => {
                 size="lg"
               >
                 <Send className="mr-2 h-5 w-5" />
-                Send Message
+                {t('sendMessage')}
               </Button>
             </form>
           </Card>
