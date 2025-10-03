@@ -35,18 +35,14 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-background/80 backdrop-blur-lg shadow-lg border-b border-border'
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200 dark:bg-gray-900 dark:border-gray-800"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+            className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white hover:opacity-80 transition-opacity"
           >
             Mostafa Elalfy
           </button>
@@ -57,7 +53,7 @@ const Header = () => {
               <button
                 key={item.key}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+                className="text-sm font-semibold text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors relative group"
               >
                 {t(item.key)}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -71,7 +67,7 @@ const Header = () => {
               href="https://github.com/mostafaelalfy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
               aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
@@ -80,7 +76,7 @@ const Header = () => {
               href="https://linkedin.com/in/mostafaelalfy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
@@ -89,7 +85,7 @@ const Header = () => {
               variant="ghost"
               size="icon"
               onClick={toggleLanguage}
-              className="hover:bg-accent"
+              className="text-gray-700 hover:text-primary hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
               aria-label="Toggle Language"
             >
               <Languages className="w-5 h-5" />
@@ -101,7 +97,7 @@ const Header = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden hover:bg-accent"
+              className="md:hidden text-gray-700 hover:text-primary hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-800"
               aria-label="Toggle Menu"
             >
               {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -111,13 +107,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden py-4 animate-fade-in">
+          <nav className="md:hidden py-4 animate-fade-in bg-white dark:bg-gray-900">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <button
                   key={item.key}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2"
+                  className="text-left text-sm font-semibold text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors py-2"
                 >
                   {t(item.key)}
                 </button>
