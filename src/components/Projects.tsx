@@ -15,7 +15,7 @@ const Projects = () => {
       image: project1,
       tags: ["React", "Tailwind CSS", "JavaScript"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/MostafaAyman77/Mostafa-Store"
     },
     {
       title: "Task Management App",
@@ -39,7 +39,7 @@ const Projects = () => {
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-white">
             {t('projectsTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />

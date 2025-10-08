@@ -64,7 +64,7 @@ const Header = () => {
           {/* Right Side Icons */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com/mostafaelalfy"
+              href="https://https://github.com/MostafaAyman77"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"
@@ -73,7 +73,7 @@ const Header = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/mostafaelalfy"
+              href="https://www.linkedin.com/in/mostafa-ayman77/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors"

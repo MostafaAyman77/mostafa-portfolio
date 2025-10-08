@@ -112,7 +112,7 @@ const Hero = () => {
               {/* Social links with enhanced styling */}
               <div className="flex gap-6 justify-center">
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/MostafaAyman77" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-4 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/30 hover:border-white/50 hover:scale-125 transition-all duration-300 shadow-xl group"
@@ -121,7 +121,7 @@ const Hero = () => {
                   <Github className="h-6 w-6 group-hover:rotate-12 transition-transform" />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/mostafa-ayman77/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-4 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/30 hover:border-white/50 hover:scale-125 transition-all duration-300 shadow-xl group"
@@ -130,7 +130,7 @@ const Hero = () => {
                   <Linkedin className="h-6 w-6 group-hover:rotate-12 transition-transform" />
                 </a>
                 <a 
-                  href="mailto:mostafa@example.com"
+                  href="mailto:mostafaelalfy77@gmail.com"
                   className="p-4 rounded-full bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white/30 hover:border-white/50 hover:scale-125 transition-all duration-300 shadow-xl group"
                   aria-label="Email Contact"
                 >
@@ -143,7 +143,7 @@ const Hero = () => {
       </div>
       
       {/* Playful scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+      <div className="absolute bottom-8 left-3 transform -translate-x-1/2 animate-bounce z-20">
         <div className="flex flex-col items-center gap-2">
           <div className="w-8 h-12 border-3 border-white/70 rounded-full p-2 shadow-2xl bg-white/10 backdrop-blur-sm">
             <div className="w-2 h-2 bg-white rounded-full mx-auto animate-pulse" />

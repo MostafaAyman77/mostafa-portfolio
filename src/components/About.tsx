@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/ME.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
@@ -8,7 +8,7 @@ const About = () => {
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-white">
             {t('aboutTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
@@ -21,7 +21,8 @@ const About = () => {
               <img 
                 src={profileImage} 
                 alt="Mostafa Ayman Elalfy - Frontend Developer" 
-                className="relative rounded-3xl shadow-lg w-full max-w-md mx-auto"
+                className="relative rounded-3xl shadow-lg w-full max-w-md mx-auto object-cover border-4 border-white"
+                style={{ height: "600px"}}
               />
             </div>
           </div>
@@ -41,12 +42,12 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-4 pt-4">
               <Card className="p-6 text-center hover:shadow-lg transition-smooth border-none gradient-card">
-                <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">3+</div>
+                <div className="text-3xl font-bold gradient-primary bg-clip-text text-white">3+</div>
                 <div className="text-sm text-muted-foreground mt-2">{t('yearsExperience')}</div>
               </Card>
               
               <Card className="p-6 text-center hover:shadow-lg transition-smooth border-none gradient-card">
-                <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">20+</div>
+                <div className="text-3xl font-bold gradient-primary bg-clip-text text-white">20+</div>
                 <div className="text-sm text-muted-foreground mt-2">{t('projectsCompleted')}</div>
               </Card>
             </div>

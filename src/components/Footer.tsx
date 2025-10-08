@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-muted-foreground flex items-center justify-center gap-2">
-            Made with <Heart className="h-4 w-4 text-primary fill-primary" /> by Mostafa Ayman Elalfy
+            Made by <span className="font-bold">Mostafa Ayman Elalfy</span> <Heart className="h-4 w-4 text-primary fill-primary" /><Heart className="h-4 w-4 text-primary fill-primary" /><Heart className="h-4 w-4 text-primary fill-primary" />
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             © {currentYear} {t('allRightsReserved')}

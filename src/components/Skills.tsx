@@ -77,7 +77,7 @@ const Skills = () => {
         {/* Technology badges */}
         <div className="mt-16 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
           <div className="flex flex-wrap justify-center gap-3">
-            {["HTML5", "CSS3", "JavaScript", "React", "React Native", "TypeScript", "Tailwind CSS", "Bootstrap", "Git"].map((tech) => (
+            {["HTML5", "CSS3", "JavaScript", "React", "React Native", "TypeScript", "Tailwind CSS", "Bootstrap", "Git", "Redux Toolkit", "Zustand"].map((tech) => (
               <span 
                 key={tech}
                 className="px-4 py-2 bg-white/50 backdrop-blur-sm rounded-full text-sm font-medium text-foreground hover:shadow-md transition-smooth border border-border"

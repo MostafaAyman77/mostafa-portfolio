@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Send, MessageSquare  } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -52,23 +52,30 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      value: "mostafa@example.com",
-      href: "mailto:mostafa@example.com",
+      value: "mostafaelalfy77@gmail.com",
+      href: "mailto:mostafaelalfy77@gmail.com",
       color: "from-primary to-secondary"
     },
     {
       icon: <Github className="h-6 w-6" />,
       label: "GitHub",
-      value: "github.com/mostafa",
-      href: "https://github.com",
+      value: "github.com/mostafa77",
+      href: "https://github.com/MostafaAyman77",
       color: "from-secondary to-accent"
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/mostafa",
-      href: "https://linkedin.com",
+      value: "linkedin.com/in/mostafa-ayman77",
+      href: "https://www.linkedin.com/in/mostafa-ayman77/",
       color: "from-accent to-primary"
+    },
+    {
+      icon: <MessageSquare className="h-6 w-6" />, // Using MessageSquare icon
+      label: "WhatsApp",
+      value: "wa.me/201020934202", 
+      href: "https://wa.me/201020934202", 
+      color: "from-green-500 to-teal-500"
     }
   ];
 
@@ -76,7 +83,7 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-primary bg-clip-text text-white">
             {t('contactTitle')}
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />

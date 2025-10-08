@@ -59,7 +59,7 @@ const translations = {
     
     // Contact Section
     contactTitle: "Let's Work Together",
-    contactSubtitle: 'Get in touch with me',
+    contactSubtitle: 'Get in touch with me and prefere ably via whatsApp',
     contactDescription: "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
     yourName: 'Your Name',
     yourEmail: 'Your Email',
@@ -119,7 +119,7 @@ const translations = {
     
     // Contact Section
     contactTitle: 'لنعمل معاً',
-    contactSubtitle: 'تواصل معي',
+    contactSubtitle: 'تواصل معي ويفضل عبر الواتس اب ',
     contactDescription: 'أنا دائماً منفتح لمناقشة مشاريع جديدة أو أفكار إبداعية أو فرص لأكون جزءاً من رؤيتك.',
     yourName: 'اسمك',
     yourEmail: 'بريدك الإلكتروني',

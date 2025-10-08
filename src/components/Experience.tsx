@@ -8,8 +8,8 @@ const Experience = () => {
     {
       type: "work",
       title: "Frontend Developer",
-      organization: "Tech Solutions Inc.",
-      period: "2022 - Present",
+      organization: "Freelancing",
+      period: "2023 - Present",
       description: "Developing and maintaining responsive web applications using React and modern JavaScript frameworks. Collaborating with design and backend teams to deliver high-quality user experiences.",
       skills: ["React", "TypeScript", "Tailwind CSS"]
     },
@@ -17,7 +17,7 @@ const Experience = () => {
       type: "work",
       title: "Mobile App Developer",
       organization: "Digital Innovations",
-      period: "2021 - 2022",
+      period: "2025",
       description: "Built cross-platform mobile applications using React Native. Implemented features for iOS and Android platforms, ensuring smooth performance and excellent user experience.",
       skills: ["React Native", "JavaScript", "Mobile Development"]
     }
@@ -27,16 +27,16 @@ const Experience = () => {
     {
       type: "education",
       title: "Bachelor's Degree in Computer Science",
-      organization: "University of Technology",
-      period: "2017 - 2021",
+      organization: "Zagazig University",
+      period: "2022 - 2025",
       description: "Focused on software engineering, web technologies, and mobile application development. Graduated with honors.",
-      skills: ["Computer Science", "Software Engineering", "Web Development"]
+      skills: ["Web Development", "Information Technology", "Software Engineering", "Computer Science" ]
     },
     {
       type: "education",
       title: "Frontend Development Certification",
       organization: "Online Learning Platform",
-      period: "2020",
+      period: "2023",
       description: "Completed comprehensive training in modern frontend development including React, JavaScript, and responsive design principles.",
       skills: ["React", "JavaScript", "CSS"]
     }
